@@ -46,7 +46,7 @@ const deleteAll=()=>
 return(
 <div className="container">
 <div className="newTodo">
-	<input type='text' placeholder="Write New Todo..." value={newInput} onChange={e=>setNewInput(e.target.value)} />
+	<input type='text' placeholder="Add New Todo..." value={newInput} onChange={e=>setNewInput(e.target.value)} />
 	<button onClick={onAdd} >Add▼</button>
 </div>
 <div className="todoList">
@@ -54,9 +54,9 @@ return(
 </div>
 
 <footer>
-<div>{todos.length>0 && <button className="deleteDone" onClick={deleteDone}>Cleare Complited</button>}
+<div>{todos.length>0 && <button className="deleteDone" onClick={deleteDone}>Remove Checked</button>}
 {` ${todos.length>0?  selected : 0 }/${todos.length}`}</div>
-{todos.length>0 &&	<button  className="deleteAll" onClick={deleteAll}>Delete All</button>}
+{todos.length>0 &&	<button  className="deleteAll" onClick={deleteAll}>× Delete All</button>}
 </footer>
 </div>
 )}
