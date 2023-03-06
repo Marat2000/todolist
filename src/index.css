@@ -1,0 +1,154 @@
+.todoName
+{
+	text-align: center;
+	width: 86%;
+	word-wrap: break-word;
+	letter-spacing: .1rem;
+	font-weight: bold;
+
+}
+
+.lineThrough
+{
+	text-decoration: line-through;
+	letter-spacing: .15rem;
+	color:#666;
+
+	
+}
+
+
+html
+{
+	place-items:center;
+	min-height: 100vh;
+	display: grid;
+	font-size: 16px;
+}
+
+
+*
+{
+background-color:#dddddd;
+font-family: system-ui;
+
+}
+
+.todo
+{
+	display: flex;
+	text-align: center;
+	width: 100%;
+	border-radius: .2rem;
+	border:1px solid grey;
+	margin-top: .5rem;
+	overflow: auto;
+	overflow-x:hidden;
+}
+
+.todo:hover , .todo:hover *
+{
+	background-color: #9fc4f5;
+	cursor: pointer;
+	color: white;
+	transition: .3s;
+}
+
+.todoList
+{
+	overflow: auto;
+	overflow-x:hidden;
+	min-height: 30vh;
+	max-height: 60vh;
+	padding: 0.1rem;
+}
+
+.container
+{
+	width: 20rem;
+	border:1px solid grey;
+	box-shadow: rgba(0,0,0,.2) 0rem 0rem 2rem;
+	padding:1rem  2rem;
+	border-radius: 1rem;
+	min-height: 40vh;
+	max-height: 70vh;
+	
+}
+
+.container, .container *
+{
+	background-color: white;
+}
+
+
+.newTodo
+{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	border:1px solid grey;
+	padding:  0.2rem 0;
+
+
+}
+
+.newTodo input
+{
+	width:100%;
+	border:none;
+	text-align: left;
+	outline: none;
+	font-weight: bold;
+	letter-spacing: .05rem;
+	padding-left: 5%;
+
+	
+}
+
+.deleteDone
+{
+	margin-top: .5rem;
+}
+
+button
+{
+	font-weight: bold;
+	border:none;
+	font-size: 1rem;
+}
+
+button:hover
+{
+	cursor: pointer;
+	color: #247cf0;
+	transition: .3s; 
+}
+
+
+.deleteTodo:hover, .deleteAll:hover
+{
+	cursor: pointer;
+	color: red;
+	transition: .3s; 
+}
+
+.check
+{
+	cursor: pointer;
+}
+
+footer
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+
+}
+
+
+
+
+
+
+
+
